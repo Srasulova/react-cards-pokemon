@@ -2,7 +2,7 @@ import React from "react";
 import PokemonSelect from "./PokemonSelect";
 import PokemonCard from "./PokemonCard";
 import "./PokeDex.css";
-import useAxios from "./hooks";
+import { useAxios } from "./hooks";
 
 /* Renders a list of pokemon cards.
  * Can also add a new card at random,

@@ -3,11 +3,11 @@ import { v1 as uuid } from "uuid";
 // import axios from "axios";
 import PlayingCard from "./PlayingCard";
 import "./PlayingCardList.css";
-import useAxios from "./hooks";
+import { useAxios } from "./hooks";
 
 /* Renders a list of playing cards.
  * Can also add a new card at random. */
-function CardTable() {
+function PlayingCardList() {
   const [cards, addCard] = useAxios(
     "https://deckofcardsapi.com/api/deck/new/draw/"
   );
@@ -30,6 +30,6 @@ function CardTable() {
   );
 }
 
-CardTable.defaultProps = {};
+PlayingCardList.defaultProps = {};
 
-export default CardTable;
+export default PlayingCardList;

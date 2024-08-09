@@ -11,8 +11,6 @@ function useFlip() {
   return [isFlipped, toggleFlip];
 }
 
-export default useFlip;
-
 function useAxios(baseUrl) {
   const [data, setData] = useState([]);
 
@@ -27,4 +25,4 @@ function useAxios(baseUrl) {
   return [data, addData];
 }
 
-export { useAxios };
+export { useAxios, useFlip };
